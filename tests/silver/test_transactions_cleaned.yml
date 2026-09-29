@@ -1,0 +1,34 @@
+version: 2
+
+models: 
+  - name: transactions_cleaned
+    columns:
+      - name: transaction_sequence 
+        tests:
+          - not_null
+          
+
+      - name: transaction_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: 
+                - PAYMENT
+                - TRANSFER
+
+      - name: transaction_amount
+        tests:
+          - not_null
+      
+      - name: sender_name
+        tests:
+          - not_null
+      
+      - name: balance_validation
+        tests: 
+          - not_null
+          - accepted_values:
+              values:
+                - valid
+                - invalid 
+
