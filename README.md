@@ -10,11 +10,11 @@ A production-ready dbt medallion architecture for payment settlement reconciliat
 
 ## Key Features
 
-- ✅ Medallion architecture (bronze → silver → gold)
-- ✅ Automated data quality tests (8 tests, all passing)
-- ✅ dbt for version control and lineage tracking
-- ✅ Cost-optimized BigQuery queries
-- ✅ Column renaming for business clarity
+-  Medallion architecture (bronze → silver → gold)
+-  Automated data quality tests (8 tests, all passing)
+-  dbt for version control and lineage tracking
+-  Cost-optimized BigQuery queries
+-  Column renaming for business clarity
 
 ## Tech Stack
 
